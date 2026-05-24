@@ -67,6 +67,7 @@
                     <p class="data-date">E Ejnte, 18 qershor 2026</p>
                     <p class="data-time">Takohemi nga ora 20:00 - 20:30</p>
                     <p class="data-entrance">Hyrja nga ora 20:45</p>
+                    <p class="data-confirm">Na Konfirmoni ardhjen tuaj ne Tlf: +49 176 84752661</p>
                 </article>
                 <article class="card">
                     <h2>Restoranti &amp; Lokacioni</h2>
@@ -90,6 +91,7 @@
                 dataText1: "E Ejnte, 18 qershor 2026",
                 dataText2: "Takohemi nga ora 20:00 - 20:30",
                 dataText3: "Hyrja nga ora 20:45",
+                dataConfirm: "Na konfirmoni ardhjen tuaj në Tlf: +49 176 84752661",
                 locationTitle: "Restoranti & Lokacioni",
                 locationText: "Ahengu",
                 language: "AL"
@@ -101,8 +103,9 @@
                 scrollText: "Scroll down",
                 dataTitle: "Date & Time",
                 dataText1: "Friday, June 18, 2026",
-                dataText2: "Gather from 8:00 PM - 8:30 PM",
-                dataText3: "Entrance from 8:45 PM",
+                dataText2: "Gather from 20:00 - 20:30",
+                dataText3: "Entrance from 20:45",
+                dataConfirm: "Please confirm your attendance at Tel: +49 176 84752661",
                 locationTitle: "Restaurant & Location",
                 locationText: "Ahengu",
                 language: "EN"
@@ -116,6 +119,7 @@
                 dataText1: "Cuma, 18 Haziran 2026",
                 dataText2: "20:00 - 20:30 arası toplanma",
                 dataText3: "Giriş 20:45'te",
+                dataConfirm: "Lütfen katılımınızı şu numaraya teyit edin: +49 176 84752661",
                 locationTitle: "Restoran & Konum",
                 locationText: "Ahengu",
                 language: "TR"
@@ -153,6 +157,7 @@
             document.querySelector('.data-date').textContent = t.dataText1;
             document.querySelector('.data-time').textContent = t.dataText2;
             document.querySelector('.data-entrance').textContent = t.dataText3;
+            document.querySelector('.data-confirm').textContent = t.dataConfirm;
             document.querySelectorAll('.card h2')[1].textContent = t.locationTitle;
             document.querySelector('.location-text').textContent = t.locationText;
         }
