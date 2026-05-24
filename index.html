@@ -64,12 +64,13 @@
             <div class="grid">
                 <article class="card">
                     <h2>Data &amp; Ora</h2>
-                    <p>E Ejnte, 18 qershor 2026</p>
-                    <p>Hyrja nga ora 18:30</p>
+                    <p class="data-date">E Ejnte, 18 qershor 2026</p>
+                    <p class="data-time">Zatekemi nga ora 20:00 - 20:30</p>
+                    <p class="data-entrance">Hyrja nga ora 20:45</p>
                 </article>
                 <article class="card">
                     <h2>Restoranti &amp; Lokacioni</h2>
-                    <p>Ahengu</p>
+                    <p class="location-text">Ahengu</p>
                     <div class="map-wrapper">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.1200525721183!2d20.963427499999995!3d41.997699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1353f09016e2bb77%3A0x3c9fd28edf027a65!2sAhengu!5e0!3m2!1sde!2sde!4v1775661250552!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -87,7 +88,8 @@
                 scrollText: "Scroll down",
                 dataTitle: "Data & Ora",
                 dataText1: "E Ejnte, 18 qershor 2026",
-                dataText2: "Hyrja nga ora 18:30",
+                dataText2: "Zatekemi nga ora 20:00 - 20:30",
+                dataText3: "Hyrja nga ora 20:45",
                 locationTitle: "Restoranti & Lokacioni",
                 locationText: "Ahengu",
                 language: "AL"
@@ -99,7 +101,8 @@
                 scrollText: "Scroll down",
                 dataTitle: "Date & Time",
                 dataText1: "Friday, June 18, 2026",
-                dataText2: "Entrance from 18:30",
+                dataText2: "Gather from 8:00 PM - 8:30 PM",
+                dataText3: "Entrance from 8:45 PM",
                 locationTitle: "Restaurant & Location",
                 locationText: "Ahengu",
                 language: "EN"
@@ -111,7 +114,8 @@
                 scrollText: "Scroll down",
                 dataTitle: "Tarih & Saat",
                 dataText1: "Cuma, 18 Haziran 2026",
-                dataText2: "Giriş 18:30'da",
+                dataText2: "20:00 - 20:30 arası toplanma",
+                dataText3: "Giriş 20:45'te",
                 locationTitle: "Restoran & Konum",
                 locationText: "Ahengu",
                 language: "TR"
@@ -146,10 +150,11 @@
             
             // Detail-Texte
             document.querySelector('.card h2').textContent = t.dataTitle;
-            document.querySelectorAll('.card p')[0].textContent = t.dataText1;
-            document.querySelectorAll('.card p')[1].textContent = t.dataText2;
+            document.querySelector('.data-date').textContent = t.dataText1;
+            document.querySelector('.data-time').textContent = t.dataText2;
+            document.querySelector('.data-entrance').textContent = t.dataText3;
             document.querySelectorAll('.card h2')[1].textContent = t.locationTitle;
-            document.querySelectorAll('.card p')[2].textContent = t.locationText;
+            document.querySelector('.location-text').textContent = t.locationText;
         }
 
         function openEnvelope() {
